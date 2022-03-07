@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Hauts-de-France</title>
+</head>
+<body>
+    <form method="post" action="formulaire.php">
+        <fieldset>
+            <legend>Vos informations personelles :</legend>
+            <p>
+                <label>Votre nom</label> : <input type="text" name="nom" id="nom" placeholder="Ex: Depardieu" pattern="[A-Za-z' -].*" autofocus required>
+            </p>
+            <p>
+                <label>Votre prénom</label> : <input type="text" name="prenom" id="prenom" placeholder="Ex :Gérard" pattern="[A-Za-z' -].*" required>
+            </p>
+            <p>
+                <label>Votre âge</label> : <input type="number" name="age" id="age" placeholder="Ex :73" min="0" max="99" required>
+            </p>
+            <p>
+                <label>Votre date de naissance</label> : <input type="date" required>
+            </p>
+            <p>
+                <label>Votre sexe :</label>
+                <input type="radio" name="sexe" id="homme"><label for="homme">Homme</label>
+                <input type="radio" name="sexe" id="femme"><label for="femme">Femme</label>
+            </p>
+            <p>
+                <label>Votre pays de naissance</label> : <select name="pays" id="pays">
+                    <optgroup label="Europe">
+                        <option value="france" selected>France</option>
+                        <option value="espagne">Espagne</option>
+                        <Option value="italie">Italie</Option>
+                        <option value="portugal">Portugal</option>
+                    </optgroup>
+                    <optgroup label="Amérique du Nord">
+                        <option value="etats-unis">Etats-unis</option>
+                        <option value="canada">Canada</option>
+                        <option value="mexique">Mexique</option>
+                    </optgroup>
+                    <optgroup label="Asie">
+                        <option value="japon">Japon</option>
+                        <option value="chine">Chine</option>
+                        <option value="coree_du_sud">Corée du Sud</option>
+                    </optgroup>
+                </select>
+                <label>Votre nationalitée</label> : <select name="metier" id="metier">
+                    <optgroup label="Européenne">
+                        <option value="francaise" selected>Française</option>
+                        <option value="espagnolle">Espagnole</option>
+                        <option value="italienne">Italienne</option>
+                        <option value="portugaise">Portugaise</option>
+                    </optgroup>
+                    <optgroup label="Américaine">
+                        <option value="americaine">Américaine</option>
+                        <option value="canadienne">Canadienne</option>
+                        <option value="mexicaine">Mexicaine</option>
+                    </optgroup>
+                    <optgroup label="Asiatique">
+                        <option value="japonaise">Japonaise</option>
+                        <option value="chinoise">Chinoise</option>
+                        <option value="coreene">Coréenne</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label>Votre numéro sécurité sociale</label> : <input type="text" name="secu" id="secu" placeholder="Ex: 2 20 22 505 999" pattern="[0-9]{0,15}" required>
+            </p>
+            <p>
+                <label>Votre métier</label> : <select name="metier" id="metier">
+                    <option value="acteur">Acteur</option>
+                    <option value="macon">Maçon</option>
+                    <option value="peintre">Peintre</option>
+                    <option value="developpeur">Développeur</option>
+                    <option value="policier">Policier</option>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Vos coordonnées :</legend>
+            <p>
+                <label>Votre adresse postale</label> : <input type="text" name="adresse" id="adresse" placeholder="Ex: 52 Rue des Margoulins" required>
+                Ville :<input type="text" name="ville" id="ville" placeholder="Ex: Montcuq" pattern="[A-Za-z' -]+" required>
+                Code postal :<input type="text" name="codepostal" id="codepostal" placeholder="Ex: 46800" pattern="[0-9]{0,5}" required>
+            </p>
+            <p>
+                <label>Votre adresse mail</label> : <input type="email" name="mail" id="mail" placeholder="Ex: Gégélabarrique@gmail.com" required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Votre passeport :</legend>
+            <p>
+                <label>Date de délivrance du passeport</label> : <input type="date" required>
+            </p>
+            <p>
+                <label>Date de validité du passeport</label> : <input type="date" required>
+            </p>
+            <p>
+                <label>Numéro de passeport</label> : <input type="text" name="passeport" id="passeport" placeholder="Ex: 54 BV 85476" required>
+            </p>
+        </fieldset>
+        <p>
+            <input type="reset" value="Réinitialiser ce formulaire" />
+        </p>
+        <p>
+            <input type="submit" value="Envoyer via un boutton beaucoup trop long" />
+        </p>
+    </form>
+</body>
+</html>
