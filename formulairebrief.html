@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire Hauts-de-France</title>
 </head>
+
 <body>
     <form method="post" action="formulaire.php">
         <fieldset>
             <legend>Vos informations personelles :</legend>
             <p>
-                <label>Votre nom</label> : <input type="text" name="nom" id="nom" placeholder="Ex: Depardieu" pattern="[A-Za-z' -].*" autofocus required>
+                <label>Votre nom</label> : <input type="text" name="nom" id="nom" placeholder="Ex: Depardieu"
+                    pattern="[A-Za-z' -].*" autofocus required>
             </p>
             <p>
-                <label>Votre prénom</label> : <input type="text" name="prenom" id="prenom" placeholder="Ex :Gérard" pattern="[A-Za-z' -].*" required>
+                <label>Votre prénom</label> : <input type="text" name="prenom" id="prenom" placeholder="Ex :Gérard"
+                    pattern="[A-Za-z' -].*" required>
             </p>
             <p>
-                <label>Votre âge</label> : <input type="number" name="age" id="age" placeholder="Ex :73" min="0" max="99" required>
+                <label>Votre âge</label> : <input type="number" name="age" id="age" placeholder="Ex :73" min="0"
+                    max="99" required>
             </p>
             <p>
                 <label>Votre date de naissance</label> : <input type="date" required>
@@ -66,7 +71,8 @@
                 </select>
             </p>
             <p>
-                <label>Votre numéro sécurité sociale</label> : <input type="text" name="secu" id="secu" placeholder="Ex: 2 20 22 505 999" pattern="[0-9]{0,15}" required>
+                <label>Votre numéro sécurité sociale</label> : <input type="text" name="secu" id="secu"
+                    placeholder="Ex: 2 20 22 505 999" pattern="[0-9]{0,15}" required>
             </p>
             <p>
                 <label>Votre métier</label> : <select name="metier" id="metier">
@@ -81,12 +87,16 @@
         <fieldset>
             <legend>Vos coordonnées :</legend>
             <p>
-                <label>Votre adresse postale</label> : <input type="text" name="adresse" id="adresse" placeholder="Ex: 52 Rue des Margoulins" required>
-                Ville :<input type="text" name="ville" id="ville" placeholder="Ex: Montcuq" pattern="[A-Za-z' -]+" required>
-                Code postal :<input type="text" name="codepostal" id="codepostal" placeholder="Ex: 46800" pattern="[0-9]{0,5}" required>
+                <label>Votre adresse postale</label> : <input type="text" name="adresse" id="adresse"
+                    placeholder="Ex: 52 Rue des Margoulins" required>
+                Ville :<input type="text" name="ville" id="ville" placeholder="Ex: Montcuq" pattern="[A-Za-z' -]+"
+                    required>
+                Code postal :<input type="text" name="codepostal" id="codepostal" placeholder="Ex: 46800"
+                    pattern="[0-9]{0,5}" required>
             </p>
             <p>
-                <label>Votre adresse mail</label> : <input type="email" name="mail" id="mail" placeholder="Ex: Gégélabarrique@gmail.com" required>
+                <label>Votre adresse mail</label> : <input type="email" name="mail" id="mail"
+                    placeholder="Ex: Gégélabarrique@gmail.com" required>
             </p>
         </fieldset>
         <fieldset>
@@ -98,7 +108,8 @@
                 <label>Date de validité du passeport</label> : <input type="date" required>
             </p>
             <p>
-                <label>Numéro de passeport</label> : <input type="text" name="passeport" id="passeport" placeholder="Ex: 54 BV 85476" required>
+                <label>Numéro de passeport</label> : <input type="text" name="passeport" id="passeport"
+                    placeholder="Ex: 54 BV 85476" pattern="[0-9A-Za-z]{9}" required>
             </p>
         </fieldset>
         <p>
@@ -109,4 +120,5 @@
         </p>
     </form>
 </body>
+
 </html>
